@@ -1,0 +1,45 @@
+title: "Vince Juguilon"
+tagline: "Physics · Data · Patents"
+description: >-
+  THz spectroscopy & spintronics researcher building a bridge into
+  intellectual property analytics — phase-space models of patent data,
+  research tools, and notes along the way.
+
+# TODO: replace with your actual custom domain once you have one,
+# or leave as-is for the default vpjuguilon.github.io address.
+url: "https://vpjuguilon.github.io"
+baseurl: ""
+
+author:
+  name: "Vince Juguilon"
+  github: vpjuguilon
+  # linkedin: "https://www.linkedin.com/in/yourprofile"   # TODO: uncomment & fill in
+  # email: "you@example.com"                              # TODO: uncomment & fill in
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

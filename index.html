@@ -1,0 +1,45 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+<section class="hero">
+  <p class="eyebrow">Physics · Data · Patents</p>
+  <h1 class="hero__name">Vince Juguilon</h1>
+  <p class="hero__lede">
+    I'm a physics doctoral candidate researching terahertz spectroscopy and
+    spintronics, and I build tools and models that carry that same rigor
+    into intellectual property analytics — from phase-space diagnostics for
+    patent filing data to instrumentation software for spectroscopy labs.
+  </p>
+  <div class="hero__links">
+    <a class="pill pill--accent" href="{{ '/cv/' | relative_url }}">Read my CV</a>
+    <a class="pill" href="https://github.com/vpjuguilon" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="pill" href="#">LinkedIn ↗</a> <!-- TODO: add your LinkedIn URL -->
+  </div>
+  <div class="hero__trace">
+    {% include trajectory.svg %}
+  </div>
+</section>
+
+<section class="teaser">
+  <p class="eyebrow">Currently</p>
+  <ul class="teaser__list">
+    <li>
+      <span class="teaser__label">Patent Filing Kinematics</span>
+      <span class="teaser__desc">
+        Phase-space diagnostics for IPC technology classes, built on Google
+        Patents data — reframing filing counts as position, rate as
+        velocity, and year-over-year change as acceleration.
+      </span>
+    </li>
+    <li>
+      <span class="teaser__label">THz Waveform &amp; Spectrum Bench</span>
+      <span class="teaser__desc">
+        A browser-based analysis tool for the NIP THz Team, covering
+        TDS/FFT analysis, power-fit curve fitting, and FFT
+        convolution/deconvolution.
+      </span>
+    </li>
+  </ul>
+</section>

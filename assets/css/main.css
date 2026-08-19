@@ -1,0 +1,327 @@
+/* ---------------------------------------------------------------
+   Design tokens
+   --------------------------------------------------------------- */
+:root {
+  --color-bg: #F7F7F4;
+  --color-ink: #1B1F2B;
+  --color-ink-soft: #545A68;
+  --color-accent: #2C7A7B;   /* teal — nods to oscilloscope / THz traces */
+  --color-accent-warm: #C08A2E; /* muted gold — nods to patent seals */
+  --color-rule: #DEDCD6;
+  --color-surface: #FFFFFF;
+
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --measure: 40rem;
+  --gutter: 1.5rem;
+}
+
+/* ---------------------------------------------------------------
+   Reset & base
+   --------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; display: block; }
+
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--color-accent-warm); }
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-ink);
+  color: var(--color-bg);
+  padding: 0.75rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+/* ---------------------------------------------------------------
+   Layout shell
+   --------------------------------------------------------------- */
+.site-header,
+.site-footer,
+.hero,
+.teaser,
+.post {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---------------------------------------------------------------
+   Nav
+   --------------------------------------------------------------- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-block: 1.75rem;
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.site-nav__brand {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.site-nav__brand:hover { color: var(--color-accent); }
+
+.site-nav__links {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.site-nav__links a {
+  color: var(--color-ink-soft);
+  text-decoration: none;
+}
+.site-nav__links a:hover { color: var(--color-accent); }
+
+/* ---------------------------------------------------------------
+   Eyebrow — small caps mono label used as a structural marker
+   --------------------------------------------------------------- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 0.75rem;
+}
+
+/* ---------------------------------------------------------------
+   Hero
+   --------------------------------------------------------------- */
+.hero {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.hero__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.1;
+  margin: 0 0 1.25rem;
+}
+
+.hero__lede {
+  font-size: 1.08rem;
+  color: var(--color-ink-soft);
+  max-width: var(--measure);
+  margin: 0 0 1.75rem;
+}
+
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--color-rule);
+  border-radius: 999px;
+  color: var(--color-ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.pill:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.pill--accent {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-bg);
+}
+.pill--accent:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Trajectory signature graphic */
+.hero__trace { margin-top: 1rem; }
+
+.trajectory__path {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 620;
+  stroke-dashoffset: 620;
+  animation: draw-trace 1.4s ease-out forwards;
+}
+.trajectory__point {
+  fill: var(--color-bg);
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+.trajectory__point--current {
+  fill: var(--color-accent-warm);
+  stroke: var(--color-accent-warm);
+}
+
+@keyframes draw-trace {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trajectory__path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Teaser list (homepage "Currently" section)
+   --------------------------------------------------------------- */
+.teaser { padding-bottom: 4rem; }
+
+.teaser__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-rule);
+}
+
+.teaser__list li {
+  display: block;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.teaser__label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.teaser__desc {
+  display: block;
+  color: var(--color-ink-soft);
+  font-size: 0.96rem;
+}
+
+/* ---------------------------------------------------------------
+   Page header (CV, posts)
+   --------------------------------------------------------------- */
+.page-header {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.page-header h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------
+   CV / prose content (rendered from Markdown)
+   --------------------------------------------------------------- */
+main {
+  display: block;
+  padding-bottom: 4rem;
+}
+
+main > section.hero,
+main > section.teaser {
+  /* homepage sections already carry their own width/padding */
+}
+
+/* Prose container for markdown pages like the CV.
+   Scoped to direct children of <main> (and .post__content) only, since
+   hero/teaser sections already provide their own width + padding —
+   applying this generically would double-indent nested paragraphs. */
+main > h2,
+.post__content > h2 {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-top: 1px solid var(--color-rule);
+  padding-top: 1.75rem;
+  margin: 2.25rem auto 1rem;
+  max-width: 46rem;
+  padding-inline: var(--gutter);
+}
+
+h1, h2, h3 { color: var(--color-ink); }
+
+main > p, main > ul, main > ol,
+.post__content > p, .post__content > ul, .post__content > ol {
+  max-width: 46rem;
+  margin: 0 auto 1rem;
+  padding-inline: var(--gutter);
+  color: var(--color-ink-soft);
+}
+
+p strong, li strong { color: var(--color-ink); }
+
+main > ul, .post__content > ul { padding-left: calc(var(--gutter) + 1.1rem); }
+li { margin-bottom: 0.4rem; }
+
+/* ---------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------- */
+.site-footer {
+  padding-block: 2.5rem 3.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-ink-soft);
+  border-top: 1px solid var(--color-rule);
+  margin-top: 1rem;
+}
+
+/* ---------------------------------------------------------------
+   Responsive
+   --------------------------------------------------------------- */
+@media (max-width: 40rem) {
+  body { font-size: 16px; }
+  .site-nav { padding-block: 1.25rem; }
+  .hero { padding-top: 1.5rem; }
+}
