@@ -401,6 +401,13 @@ h1, h2, h3 { color: var(--color-ink); }
   .cv-head__photo { width: 88px; height: 88px; }
 }
 
+main u {
+  text-decoration: none;
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
 /* ===============================================================
    PRINT — Ctrl+P on /cv/ gives a clean PDF
    =============================================================== */
@@ -410,6 +417,7 @@ h1, h2, h3 { color: var(--color-ink); }
   body { background: #fff; color: #000; font-size: 11pt; }
   main > h2 { color: #000; border-top: 1px solid #999; page-break-after: avoid; }
   main > p, main > ul, main > ol { color: #000; }
+  main u { background: none; text-decoration: underline; }
   li, p { page-break-inside: avoid; }
   a { color: #000; text-decoration: none; }
   .cv-head__photo { width: 90px; height: 90px; }

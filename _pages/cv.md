@@ -45,41 +45,44 @@ intersection of **experimental physics**, **data science**, and **intellectual p
 
 ## Professional Experience
 
-**Patent Analyst** · Parola Analytics<br>
-*June 2024 – June 2026*
+**Doctoral Researcher** · National Institute of Physics<br>
+*January 2025 – Present*
 
-* **Project leadership:** Led and contributed to dozens of patent research projects, performing data-backed patentability and freedom-to-operate (FTO) analyses across electronic engineering, mechanical engineering, IT, and materials science
-* **Data acquisition & ETL:** Engineered automated data pipelines to extract and aggregate large-scale patent datasets from Orbit Intelligence, Google Patents (web scraping), the USPTO Open Data Portal API, the EPO Open Patent Services API, and public datasets on BigQuery
-* **Data wrangling & entity resolution:** Performed extensive cleaning and normalization on heterogeneous assignee and inventor datasets; implemented fuzzy matching algorithms and string distance metrics (Levenshtein) in Python/Pandas to resolve duplicates for downstream modeling
-* **NLP & advanced analytics:** Applied natural language processing to unstructured patent abstracts using transformer-based models (BERT) for semantic search and topic modeling; conducted time series analysis and predictive trend modeling to identify emerging technology white spaces and competitive shifts
-* **Business intelligence & visualization:** Developed interactive dashboards in Power BI and Looker Studio to present complex landscape analyses to stakeholders, directly influencing client IP strategies
-* **Workflow automation:** Engineered custom Google Apps Script solutions and REST API integrations (EPO OPS, USPTO PatentsView) to automate high-volume data ingestion and report formatting, significantly reducing manual processing cycles
-* **Data storytelling:** Authored SEO-optimized technical reports and blog posts translating high-dimensional patent landscape findings into actionable insights for diverse stakeholders
-* **Hardware-to-claims mapping:** Managed complex Evidence-of-Use (EOU) projects, applying characterization techniques such as optical microscopy, SEM, and EDX to map physical hardware components to specific technical limitations within patent claims
-* **Stakeholder management:** Presented data-driven findings and EOU results to international clients and law firms
+<br>**Invention Harvester** · Schweiger and Partners<br>
+*June 2026 – Present*
 
-**University Instructor** · University of the Philippines Diliman<br>
+<br>**Patent Analyst** · Parola Analytics<br>
+*June 2024 – Current*
+ 
+* **Project leadership:** Led and contributed to dozens of patent research projects, performing data-backed <u>patentability</u> and <u>freedom-to-operate (FTO)</u> analyses across electronic engineering, mechanical engineering, IT, and materials science
+* **Data acquisition & ETL:** Engineered <u>automated data pipelines</u> to extract and aggregate <u>large-scale patent datasets</u> from Orbit Intelligence, Google Patents (web scraping), the USPTO Open Data Portal API, the EPO Open Patent Services API, and public datasets on BigQuery
+* **Data wrangling & entity resolution:** Performed extensive <u>data cleaning and normalization</u> on heterogeneous assignee and inventor datasets; implemented <u>fuzzy matching algorithms</u> and <u>string distance metrics</u> in Python/Pandas to resolve duplicates for downstream modeling
+* **NLP & advanced analytics:** Applied <u>natural language processing</u> to unstructured patent abstracts using <u>transformer-based models (BERT)</u> for semantic search and topic modeling; conducted <u>time series analysis</u> and <u>predictive trend modeling</u> to identify emerging technology white spaces and competitive shifts
+* **Business intelligence & visualization:** Developed <u>interactive dashboards</u> in Power BI and Looker Studio to present complex landscape analyses to stakeholders, directly influencing client IP strategies
+* **Workflow automation:** Engineered custom <u>Google Apps Script</u> solutions and <u>REST API integrations</u> (EPO OPS, USPTO PatentsView) to automate high-volume data ingestion and report formatting, significantly reducing manual processing cycles
+* **Data storytelling:** Authored <u>SEO-optimized technical reports</u> and blog posts translating high-dimensional patent landscape findings into actionable insights for diverse stakeholders
+* **Hardware-to-claims mapping:** Managed complex <u>Evidence-of-Use (EOU)</u> projects, applying characterization techniques such as <u>optical microscopy, SEM, and EDX</u> to map physical hardware components to specific technical limitations within patent claims
+* **Stakeholder management:** Presented data-driven findings and EOU results to <u>international clients and law firms</u>
+
+<br>**University Instructor** · University of the Philippines Diliman<br>
 *September 2021 – January 2024*
-
-* **Technical instruction:** Delivered lecture and laboratory courses for engineering and physics majors in classical mechanics, electromagnetism, optics, electronics, and introductory programming
-* **Curriculum engineering & leadership:** Served as Course Group Leader for an elementary physics laboratory, designing experimental curricula and authoring technical manuals to standardize instruction and data collection methods
+ 
+<br>* **Technical instruction:** Delivered lecture and laboratory courses for engineering and physics majors in <u>classical mechanics, electromagnetism, optics, electronics</u>, and <u>introductory programming</u>
+* **Curriculum engineering & leadership:** Served as <u>Course Group Leader</u> for an elementary physics laboratory, designing <u>experimental curricula</u> and authoring technical manuals to standardize instruction and data collection methods
 * **Project management & logistics:** Coordinated equipment logistics and laboratory workflows to ensure smooth delivery of technical experiments for large student cohorts
-* **Technical mentorship & research review:** Acted as thesis defense panelist for undergraduate research, providing critical feedback on experimental rigor, data analysis methodology, and quality of technical documentation
+* **Technical mentorship & research review:** Acted as <u>thesis defense panelist</u> for undergraduate research, providing critical feedback on <u>experimental rigor</u> and <u>data analysis methodology</u>
 * **Cross-functional coordination:** Collaborated with faculty and instructors to ensure consistency in syllabus delivery across multiple course sections
 
-**Student Researcher and Project Staff** · National Institute of Physics<br>
+<br>**Student Researcher and Project Staff** · National Institute of Physics<br>
 *January 2018 – January 2024*
+ 
+* **Computational modeling & numerical analysis:** Developed <u>Python-based computational models</u> to simulate carrier dynamics by solving complex <u>partial differential equations</u>; performed <u>model validation</u> by statistically comparing simulations with experimental data
+* **System engineering & data acquisition:** Assisted in the execution of a <u>DOST-funded research project</u> on <u>fast-scan terahertz spectroscopy</u>, contributing to experimental design, project scoping, and procurement of high-precision laboratory instrumentation
+* **Experimental research & signal processing:** Conducted research on <u>THz spectroscopy</u>, managing and maintaining <u>high-sensitivity optical setups</u> and laser systems to ensure integrity of experimental datasets
+* **International collaboration:** Collaborated with <u>international research institutions</u> on joint experiments and data analysis, contributing to publication of results across global, cross-functional teams
+* **Technical communication:** Presented research findings at <u>international conferences</u> and published results in <u>peer-reviewed journals</u> and conference proceedings
+ 
 
-* **Computational modeling & numerical analysis:** Developed Python-based computational models to simulate carrier dynamics by solving complex partial differential equations; performed model validation by statistically comparing simulations with experimental data
-* **System engineering & data acquisition:** Assisted in the execution of a DOST-funded research project on fast-scan terahertz spectroscopy, contributing to experimental design, project scoping, and procurement of high-precision laboratory instrumentation
-* **Experimental research & signal processing:** Conducted research on THz spectroscopy, managing and maintaining high-sensitivity optical setups and laser systems to ensure integrity of experimental datasets
-* **International collaboration:** Collaborated with international research institutions on joint experiments and data analysis, contributing to publication of results across global, cross-functional teams
-* **Technical communication:** Presented research findings at international conferences and published results in peer-reviewed journals and conference proceedings
-
-## Publications
-
-Ten publications, cited 10 times. Full list on
-[ResearchGate](https://www.researchgate.net/profile/Vince-Paul-Juguilon).
 
 ## Journal Articles
 
@@ -107,7 +110,7 @@ L. N. Dela Rosa, K. J. Alaba, N. I. Cabello, R. Loberternos, J. P. Ferrolino, I.
 *Journal of Materials Science: Materials in Electronics*, March 2024<br>
 H. R. Bardolaza, J. P. R. Ferrolino, I. C. M. Verona, V. P. P. Juguilon, L. N. F. Dela Rosa, M. L. Talara, et al., A. S. Somintac, A. A. Salvador, N. I. F. Cabello, A. E. De Los Reyes, et al., E. S. Estacio
 
-### Conference Papers
+## Conference Papers
 
 [**Investigation of spin-current lifetime in Fe/Pt spintronic terahertz emitter using double optical pump technique**](https://doi.org/10.1109/IRMMW-THz60956.2024.10697854)<br>
 *49th International Conference on Infrared, Millimeter and Terahertz Waves (IRMMW-THz)*, September 2024<br>
