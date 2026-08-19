@@ -81,6 +81,6 @@ workflows. Built in React (Recharts, MathJS, PapaParse), deployed on Vercel.
 
 ## Contact
 
-* Email: [your email]
+* Email: [juguilon.vincepaul@gmail.com](juguilon.vincepaul@gmail.com)
 * GitHub: [github.com/vpjuguilon](https://github.com/vpjuguilon)
-* LinkedIn: [your LinkedIn URL]
+* LinkedIn: [linkedin.com/in/vpjuguilon/](https://www.linkedin.com/in/vpjuguilon/)

@@ -37,6 +37,9 @@ defaults:
     values:
       layout: "post"
 
+include:
+  - _pages
+
 exclude:
   - Gemfile
   - Gemfile.lock
