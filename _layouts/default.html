@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+  {% include theme-init.html %}
   {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +15,18 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header>
     <nav class="site-nav">
       <a class="site-nav__brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
-      <div class="site-nav__links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/cv/' | relative_url }}">CV</a>
-        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+      <div class="site-nav__right">
+        <div class="site-nav__links">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <button class="theme-toggle" id="mode-toggle" type="button" aria-label="Switch between light and dark mode">
+          <span aria-hidden="true">◐</span>
+        </button>
       </div>
     </nav>
   </header>
@@ -32,5 +38,7 @@
   <footer class="site-footer">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Built with Jekyll, hosted on GitHub Pages.</p>
   </footer>
+
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 </body>
 </html>

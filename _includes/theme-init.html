@@ -1,0 +1,8 @@
+<script>
+(function () {
+  try {
+    var mode = localStorage.getItem('site-mode');
+    if (mode) document.documentElement.setAttribute('data-mode', mode);
+  } catch (e) {}
+})();
+</script>

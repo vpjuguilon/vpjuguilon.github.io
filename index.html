@@ -4,8 +4,15 @@ title: Home
 permalink: /
 ---
 <section class="hero">
-  <p class="eyebrow">Physics · Data · Patents</p>
-  <h1 class="hero__name">Vince Paul Juguilon</h1>
+  <div class="hero__top">
+    <img class="hero__photo"
+         src="{{ '/assets/img/casual.jpg' | relative_url }}"
+         alt="Vince Paul Juguilon">
+    <div>
+      <p class="eyebrow">Physics · Data · Patents</p>
+      <h1 class="hero__name">Vince Paul Juguilon</h1>
+    </div>
+  </div>
   <p class="hero__lede">
     Multidisciplinary professional and Physics PhD candidate with expertise 
     at the intersection of <i>experimental physics</i>, <i>data science</i>, and <i>intellectual property</i>.
@@ -13,7 +20,7 @@ permalink: /
   <div class="hero__links">
     <a class="pill pill--accent" href="{{ '/cv/' | relative_url }}">Read my CV</a>
     <a class="pill" href="https://github.com/vpjuguilon" target="_blank" rel="noopener">GitHub ↗</a>
-    <a class="pill" href="https://www.linkedin.com/in/vpjuguilon/">LinkedIn ↗</a> 
+    <a class="pill" href="https://www.linkedin.com/in/vpjuguilon/" target="_blank" rel="noopener">LinkedIn ↗</a>
   </div>
   <div class="hero__trace">
     {% include trajectory.svg %}

@@ -12,8 +12,8 @@ baseurl: ""
 author:
   name: "Vince Paul Juguilon"
   github: vpjuguilon
-  # linkedin: "https://www.linkedin.com/in/yourprofile"   # TODO: uncomment & fill in
-  # email: "you@example.com"                              # TODO: uncomment & fill in
+  linkedin: "https://www.linkedin.com/in/vpjuguilon/"
+  email: "juguilon.vincepaul@gmail.com"
 
 markdown: kramdown
 kramdown:
