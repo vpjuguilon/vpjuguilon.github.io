@@ -1,9 +1,8 @@
-title: "Vince Juguilon"
+title: "Vince Paul Juguilon"
 tagline: "Physics · Data · Patents"
 description: >-
-  THz spectroscopy & spintronics researcher building a bridge into
-  intellectual property analytics — phase-space models of patent data,
-  research tools, and notes along the way.
+  Multidisciplinary professional and Physics PhD candidate with expertise 
+  at the intersection of experimental physics, data science, and intellectual property.
 
 # TODO: replace with your actual custom domain once you have one,
 # or leave as-is for the default vpjuguilon.github.io address.
@@ -11,7 +10,7 @@ url: "https://vpjuguilon.github.io"
 baseurl: ""
 
 author:
-  name: "Vince Juguilon"
+  name: "Vince Paul Juguilon"
   github: vpjuguilon
   # linkedin: "https://www.linkedin.com/in/yourprofile"   # TODO: uncomment & fill in
   # email: "you@example.com"                              # TODO: uncomment & fill in

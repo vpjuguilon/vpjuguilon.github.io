@@ -6,81 +6,129 @@ permalink: /cv/
 
 <header class="page-header">
   <p class="eyebrow">Curriculum Vitae</p>
-  <h1>Vince Juguilon</h1>
+  <h1>Vince Paul P. Juguilon</h1>
 </header>
 
-<!--
-NOTE: This is a starting draft. Anything in [brackets] is a placeholder —
-fill in or delete it. The research/projects sections are pre-filled from
-what's already known about your work; everything else (dates, degrees,
-contact info, awards) needs your input.
--->
+Multidisciplinary professional and Physics PhD candidate with expertise at the
+intersection of **experimental physics**, **data science**, and **intellectual
+property**.
 
-## Summary
-
-Physics doctoral candidate researching THz spectroscopy and spintronics, with
-an active focus on applying data science and dynamical-systems methods to
-intellectual property analytics. Building a cross-disciplinary portfolio at
-the intersection of physics, data science, and IP law/patent analytics.
+[Email](mailto:juguilon.vincepaul@gmail.com) ·
+[LinkedIn](https://www.linkedin.com/in/vpjuguilon/) ·
+[GitHub](https://github.com/vpjuguilon) ·
+[ResearchGate](https://www.researchgate.net/profile/Vince-Paul-Juguilon) <!-- TODO: replace with your actual ResearchGate URL -->
 
 ## Education
 
-* **Ph.D. in Physics**, [University of the Philippines Diliman — National
-  Institute of Physics], [Expected/Conferred Year]
-  Dissertation focus: THz spectroscopy and spintronics
-  Adviser: Dr. Elmer Estacio
+**Doctor of Philosophy in Physics** · University of the Philippines Diliman<br>
+*Ongoing* — Research topic: Terahertz Spectroscopy, Spintronics, and Orbitronics (coursework in progress)
 
-* **[Your Undergraduate Degree]**, [Institution], [Year]
+**Master of Science in Physics** · University of the Philippines Diliman<br>
+*June 2023* — Thesis: Ultrafast carrier dynamics in InAs/GaAs self-assembled quantum dots investigated via optical pump–terahertz probe spectroscopy
 
-## Research Experience
+**Bachelor of Science in Applied Physics** · University of the Philippines Diliman<br>
+*February 2021* — Thesis: Design of an absolute spectral emission power distribution measurement system in the UV-VIS-NIR region using an integrating sphere head and spectrometer
 
-**Doctoral Researcher — NIP THz Team**
-[University of the Philippines Diliman] — [Start Year–Present]
-* Conducting THz spectroscopy and spintronics research under Dr. Elmer Estacio
-* Collaborating with Dr. May Lim on numerical methods and complex systems
-  approaches
-* Working with Atty. Christopher Cruz to incorporate IP and
-  legal-institutional perspectives into research framing
+## Professional Experience
 
-## Selected Portfolio Projects
+**Patent Analyst** · Parola Analytics, Pasig City<br>
+*June 2024 – Present*
 
-**Patent Filing Kinematics** — *Ongoing*
-A research project reframing patent filing data as a dynamical system
-(cumulative filings as position, filing rate as velocity, year-over-year
-change as acceleration) to build phase-space diagnostics for IPC technology
-classes. Built on Google Patents Public Data via BigQuery, with a Python
-pipeline for data extraction and analysis. Targeting a mini-conference
-presentation and submission to *World Patent Information*.
-[GitHub repo link] · [Live demo / write-up link]
+* Led and contributed to dozens of patent research projects, performing data-backed **patentability** and **freedom-to-operate (FTO)** analyses across electronic engineering, mechanical engineering, IT, and materials science
+* Engineered automated data pipelines to extract and aggregate large-scale patent datasets from Orbit Intelligence, Google Patents, the USPTO Open Data Portal API, the EPO Open Patent Services API, and public datasets on BigQuery
+* Implemented fuzzy matching and string distance metrics (Levenshtein) in Python/Pandas to resolve duplicates in heterogeneous assignee and inventor datasets
+* Applied NLP to unstructured patent abstracts using transformer-based models (BERT) for semantic search and topic modeling; conducted time series analysis and predictive trend modeling to identify emerging technology white spaces
+* Developed interactive dashboards in Power BI and Looker Studio to present landscape analyses to stakeholders, directly influencing client IP strategies
+* Built custom Google Apps Script solutions and REST API integrations to automate high-volume data ingestion and report formatting
+* Managed Evidence-of-Use (EOU) projects, applying optical microscopy, SEM, and EDX to map physical hardware components to specific limitations in patent claims
+* Authored SEO-optimized technical reports and blog posts translating high-dimensional patent data into actionable insights; presented findings to international clients and law firms
 
-**THz Waveform & Spectrum Bench**
-A browser-based analysis tool built for the NIP THz Team, supporting
-time-domain spectroscopy & FFT analysis, power-fit curve fitting with a
-custom Levenberg–Marquardt solver, and stackable FFT convolution/deconvolution
-workflows. Built in React (Recharts, MathJS, PapaParse), deployed on Vercel.
-[GitHub repo link] · [Live tool link]
+**University Instructor** · University of the Philippines Diliman<br>
+*September 2021 – January 2024*
 
-## Technical Skills
+* Delivered lecture and laboratory courses for engineering and physics majors in classical mechanics, electromagnetism, optics, electronics, and introductory programming
+* Served as Course Group Leader for an elementary physics laboratory, designing experimental curricula and authoring technical manuals to standardize instruction
+* Acted as thesis defense panelist for undergraduate research, providing feedback on experimental rigor and data analysis methodology
+* Coordinated equipment logistics and laboratory workflows for large student cohorts
 
-* **Data & Analysis:** Python, SQL/BigQuery, Pandas, NumPy
-* **Web/Tools:** React, JavaScript, Git/GitHub, Vercel
-* **Domain:** THz spectroscopy, spintronics, patent/IP data analysis
-* [Add any lab instrumentation, software, or methods you want to highlight]
+**Student Researcher and Project Staff** · National Institute of Physics<br>
+*January 2018 – January 2024*
 
-## Publications & Presentations
+* Developed Python-based computational models simulating carrier dynamics by solving partial differential equations, validating results against experimental data
+* Contributed to experimental design, project scoping, and instrument procurement for a DOST-funded project on fast-scan terahertz spectroscopy
+* Managed and maintained high-sensitivity optical setups and laser systems for THz spectroscopy research
+* Collaborated with international research institutions on joint experiments and data analysis
+* Presented findings at international conferences and published in peer-reviewed journals and conference proceedings
 
-* [List publications, conference talks, or posters here]
+## Selected Projects
 
-## Awards & Honors
+**Patent Filing Kinematics** — *In progress*<br>
+A research project reframing patent filing data as a dynamical system — cumulative
+filings as position, filing rate as velocity, year-over-year change as acceleration —
+to build phase-space diagnostics for IPC technology classes. Built on Google Patents
+Public Data via BigQuery with a Python analysis pipeline. Targeting conference
+presentation and journal submission.
+<!-- TODO: add repo / write-up links when ready -->
 
-* [List any fellowships, grants, or awards here]
+**THz Waveform & Spectrum Bench**<br>
+A browser-based analysis tool for the NIP THz Team supporting time-domain
+spectroscopy and FFT analysis, power-fit curve fitting with a custom
+Levenberg–Marquardt solver, and stackable FFT convolution/deconvolution workflows.
+Built in React (Recharts, MathJS, PapaParse), deployed on Vercel.
+<!-- TODO: add repo / live tool links when ready -->
 
-## Service & Affiliations
+## Skills
 
-* [Lab, society memberships, teaching assistantships, reviewing, etc.]
+**Programming & Data**<br>
+Python (Pandas, Scikit-learn, SciPy, TensorFlow, PyTorch), SQL (advanced queries and
+window functions), MATLAB, Google Apps Script
 
-## Contact
+**Machine Learning**<br>
+Natural language processing (BERT/transformers), time series analysis, predictive
+modeling, entity resolution (fuzzy matching), statistical modeling
 
-* Email: [juguilon.vincepaul@gmail.com](juguilon.vincepaul@gmail.com)
-* GitHub: [github.com/vpjuguilon](https://github.com/vpjuguilon)
-* LinkedIn: [linkedin.com/in/vpjuguilon/](https://www.linkedin.com/in/vpjuguilon/)
+**Visualization & BI**<br>
+Power BI, Looker Studio, Tableau, Seaborn, Matplotlib, OriginLab
+
+**Pipelines & Cloud**<br>
+End-to-end ETL development, REST API integration (USPTO PatentsView, EPO OPS), web
+scraping, Google BigQuery / Google Cloud Platform, data normalization and cleaning
+
+**Patent Research**<br>
+Patentability, freedom-to-operate (FTO), and evidence-of-use (EOU) analyses; Orbit
+Intelligence, Google Patents, WIPO Patentscope, USPTO Open Data Portal, Espacenet
+
+**Experimental Physics**<br>
+Terahertz time-domain spectroscopy, ultrafast optics, sputtering and thin film
+deposition, semiconductor growth and fabrication, Arduino, LabVIEW
+
+**Workflow**<br>
+Git/GitHub, virtual environments (Conda), technical documentation
+
+## Certifications
+
+* Datacamp Data Scientist Associate
+* Datacamp Data Analyst Associate
+* Datacamp SQL Associate
+* Google Business Intelligence Professional Certificate
+* Google Data Analytics Professional Certificate
+
+## Conferences & Training
+
+* **DL-101 General Course on Intellectual Property** · World Intellectual Property Organization · December 2025
+* **Basics of Quantum Information** · IBM Quantum · November 2025
+* **PatentX: Patent Law and Global Public Health** · WIPO and Harvard Law School · September–December 2024
+* **8th Academic Conference on Natural Science for Young Scientists (CASEAN)** · Presenter · Vinh City, Vietnam · 2023
+* **International Collaborative Research Program (ICRP)** · Invited Researcher · Fukui, Japan · 2023
+* **3rd Philippines–Japan Terahertz Workshop (PJTW)** · Speaker · Philippines · 2023
+* **8th Southeast Asia Collaborative Symposium on Energy Materials** · Presenter · Tsukuba, Japan · 2022
+* **12th International Conference on Photonics and Applications (ICPA)** · Presenter · Con Dao, Vietnam · 2022
+* **Fundamentals of University Teaching** · UP Diliman Office for the Advancement of Teaching · 2021
+
+## Publications
+
+<!-- TODO: Your resume mentions peer-reviewed journal and proceedings
+     publications but doesn't list them. Add them here — this section is
+     high-value for both academic and IP-employer audiences. -->
+
+*Publication list in progress.*
