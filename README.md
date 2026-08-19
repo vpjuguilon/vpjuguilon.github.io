@@ -1,7 +1,6 @@
 # vpjuguilon.github.io
 
-Personal site — physics research, patent kinematics project, THz Bench tool,
-and notes, built with Jekyll and deployed via GitHub Pages.
+Personal site, built with Jekyll and deployed via GitHub Pages.
 
 ## What's in here
 
