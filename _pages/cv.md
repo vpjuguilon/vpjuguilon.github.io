@@ -81,7 +81,7 @@ intersection of **experimental physics**, **data science**, and **intellectual p
 Ten publications, cited 10 times. Full list on
 [ResearchGate](https://www.researchgate.net/profile/Vince-Paul-Juguilon).
 
-### Journal Articles
+## Journal Articles
 
 [**Ultrafast photocarrier dynamics in InAs/GaAs self-assembled quantum dots investigated via optical pump-terahertz probe spectroscopy**](https://doi.org/10.1088/1361-6463/ad1b0c)<br>
 *Journal of Physics D: Applied Physics*, 57(14), 145107, January 2024<br>
