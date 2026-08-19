@@ -48,39 +48,68 @@ intersection of **experimental physics**, **data science**, and **intellectual p
 **Doctoral Researcher** · National Institute of Physics<br>
 *January 2025 – Present*
 
-<br>**Invention Harvester** · Schweiger and Partners<br>
+My doctoral research investigates <u>terahertz spintronics and orbitronics</u>,
+specifically the conversion of spin and orbital angular momentum into terahertz
+radiation in engineered thin-film structures. The work combines <u>ultrafast
+optical spectroscopy</u> with <u>numerical modeling</u> to characterize emission
+mechanisms and their dependence on material composition and layer geometry.
+
+**Invention Harvester** · Schweiger and Partners<br>
 *June 2026 – Present*
 
-<br>**Patent Analyst** · Parola Analytics<br>
+I draft <u>patent applications</u> for filing in multiple jurisdictions — <u>IPOS
+(Singapore)</u>, <u>PCT</u>, and <u>EP</u> — under the supervision of a patent attorney. This
+begins with <u>invention disclosure sessions</u>, where I work with inventors to
+identify <u>patentable subject matter</u> and articulate the inventive concept in
+terms that will survive examination. I also manage <u>filing deadlines</u> across
+concurrent matters and conduct <u>freedom-to-operate</u> analyses.
+
+**Patent Analyst** · Parola Analytics<br>
 *June 2024 – Current*
- 
-* **Project leadership:** Led and contributed to dozens of patent research projects, performing data-backed <u>patentability</u> and <u>freedom-to-operate (FTO)</u> analyses across electronic engineering, mechanical engineering, IT, and materials science
-* **Data acquisition & ETL:** Engineered <u>automated data pipelines</u> to extract and aggregate <u>large-scale patent datasets</u> from Orbit Intelligence, Google Patents (web scraping), the USPTO Open Data Portal API, the EPO Open Patent Services API, and public datasets on BigQuery
-* **Data wrangling & entity resolution:** Performed extensive <u>data cleaning and normalization</u> on heterogeneous assignee and inventor datasets; implemented <u>fuzzy matching algorithms</u> and <u>string distance metrics</u> in Python/Pandas to resolve duplicates for downstream modeling
-* **NLP & advanced analytics:** Applied <u>natural language processing</u> to unstructured patent abstracts using <u>transformer-based models (BERT)</u> for semantic search and topic modeling; conducted <u>time series analysis</u> and <u>predictive trend modeling</u> to identify emerging technology white spaces and competitive shifts
-* **Business intelligence & visualization:** Developed <u>interactive dashboards</u> in Power BI and Looker Studio to present complex landscape analyses to stakeholders, directly influencing client IP strategies
-* **Workflow automation:** Engineered custom <u>Google Apps Script</u> solutions and <u>REST API integrations</u> (EPO OPS, USPTO PatentsView) to automate high-volume data ingestion and report formatting, significantly reducing manual processing cycles
-* **Data storytelling:** Authored <u>SEO-optimized technical reports</u> and blog posts translating high-dimensional patent landscape findings into actionable insights for diverse stakeholders
-* **Hardware-to-claims mapping:** Managed complex <u>Evidence-of-Use (EOU)</u> projects, applying characterization techniques such as <u>optical microscopy, SEM, and EDX</u> to map physical hardware components to specific technical limitations within patent claims
-* **Stakeholder management:** Presented data-driven findings and EOU results to <u>international clients and law firms</u>
 
-<br>**University Instructor** · University of the Philippines Diliman<br>
+I led dozens of patent research projects delivering <u>patentability</u> and
+<u>freedom-to-operate</u> analyses across electronics, mechanical engineering, IT, and
+materials science. Much of this work was upstream of the analysis itself: I
+engineered <u>automated data pipelines</u> to extract <u>large-scale patent datasets</u>
+from Orbit Intelligence, Google Patents, and the USPTO and EPO APIs, then applied
+<u>fuzzy matching</u> and <u>string distance metrics</u> in Python to resolve duplicates
+across heterogeneous assignee and inventor records.
+
+Analysis extended beyond keyword retrieval. I applied <u>transformer-based models
+(BERT)</u> to unstructured patent abstracts for semantic search and topic modeling,
+and used <u>time series analysis</u> and <u>predictive trend modeling</u> to identify
+emerging white spaces and competitive shifts. Results were delivered through
+<u>interactive dashboards</u> built in Power BI and Looker Studio, and through
+<u>SEO-optimized technical reports and blog posts</u> that translated
+high-dimensional patent data for non-specialist audiences.
+
+On <u>Evidence-of-Use</u> projects, I applied <u>optical microscopy, SEM, and EDX</u> to map
+physical hardware against specific claim limitations, and presented the resulting
+findings directly to <u>international clients and law firms</u>.
+
+**University Instructor** · University of the Philippines Diliman<br>
 *September 2021 – January 2024*
- 
-<br>* **Technical instruction:** Delivered lecture and laboratory courses for engineering and physics majors in <u>classical mechanics, electromagnetism, optics, electronics</u>, and <u>introductory programming</u>
-* **Curriculum engineering & leadership:** Served as <u>Course Group Leader</u> for an elementary physics laboratory, designing <u>experimental curricula</u> and authoring technical manuals to standardize instruction and data collection methods
-* **Project management & logistics:** Coordinated equipment logistics and laboratory workflows to ensure smooth delivery of technical experiments for large student cohorts
-* **Technical mentorship & research review:** Acted as <u>thesis defense panelist</u> for undergraduate research, providing critical feedback on <u>experimental rigor</u> and <u>data analysis methodology</u>
-* **Cross-functional coordination:** Collaborated with faculty and instructors to ensure consistency in syllabus delivery across multiple course sections
 
-<br>**Student Researcher and Project Staff** · National Institute of Physics<br>
+I taught <u>classical mechanics, electromagnetism, optics, electronics</u>, and
+<u>introductory programming</u> to engineering and physics majors across lecture and
+laboratory formats. As <u>Course Group Leader</u> for an elementary physics
+laboratory, I designed <u>experimental curricula</u> and authored the technical
+manuals that standardized instruction and data collection procedures across
+sections. I additionally served as <u>thesis defense panelist</u> for undergraduate
+research, evaluating <u>experimental rigor</u> and the sufficiency of <u>data analysis</u>
+supporting stated conclusions.
+
+**Project Staff** · National Institute of Physics<br>
 *January 2018 – January 2024*
- 
-* **Computational modeling & numerical analysis:** Developed <u>Python-based computational models</u> to simulate carrier dynamics by solving complex <u>partial differential equations</u>; performed <u>model validation</u> by statistically comparing simulations with experimental data
-* **System engineering & data acquisition:** Assisted in the execution of a <u>DOST-funded research project</u> on <u>fast-scan terahertz spectroscopy</u>, contributing to experimental design, project scoping, and procurement of high-precision laboratory instrumentation
-* **Experimental research & signal processing:** Conducted research on <u>THz spectroscopy</u>, managing and maintaining <u>high-sensitivity optical setups</u> and laser systems to ensure integrity of experimental datasets
-* **International collaboration:** Collaborated with <u>international research institutions</u> on joint experiments and data analysis, contributing to publication of results across global, cross-functional teams
-* **Technical communication:** Presented research findings at <u>international conferences</u> and published results in <u>peer-reviewed journals</u> and conference proceedings
+
+I contributed to a <u>Department of Science and Technology (DOST)-funded project</u>
+in <u>fast-scan terahertz spectroscopy</u>, covering experimental design, project
+scoping, and instrument procurement. I maintained the <u>high-sensitivity optical
+setups</u> and laser systems supporting group-wide experimental work, and developed
+<u>Python-based computational models</u> of carrier dynamics validated against
+experimental measurements. Collaborations with <u>international research
+institutions</u> produced results published in <u>peer-reviewed journals</u> and
+presented at international conferences.
  
 
 
