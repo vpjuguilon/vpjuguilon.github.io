@@ -1,0 +1,45 @@
+{% comment %}
+  Usage in any page:
+    {% include gallery.html folder="certifications" label="Certificates" %}
+
+  Drop images into assets/img/gallery/<folder>/ and they appear
+  automatically, sorted by filename. No markup to edit.
+
+  Name files so they sort the way you want them displayed, and so the
+  caption reads well — the caption is the filename with hyphens and
+  underscores turned into spaces:
+
+    01_datacamp-data-scientist-associate.jpg
+      -> "datacamp data scientist associate"
+
+  Use an underscore after the sort number and hyphens elsewhere; the
+  part before the first underscore is dropped from the caption.
+{% endcomment %}
+
+{% assign dir = "/assets/img/gallery/" | append: include.folder | append: "/" %}
+{% assign shots = site.static_files | where_exp: "f", "f.path contains dir" | sort: "name" %}
+
+{% if shots.size > 0 %}
+<div class="gallery" role="group" aria-label="{{ include.label | default: include.folder }}">
+  <div class="gallery__strip">
+    {% for shot in shots %}
+      {% assign segments = shot.basename | split: "_" %}
+      {% if segments.size > 1 %}
+        {% assign raw = segments | slice: 1, 50 | join: "_" %}
+      {% else %}
+        {% assign raw = shot.basename %}
+      {% endif %}
+      {% assign caption = raw | replace: "-", " " | replace: "_", " " %}
+      <figure class="gallery__item">
+        <img src="{{ shot.path | relative_url }}"
+             alt="{{ caption }}"
+             loading="lazy"
+             decoding="async"
+             data-full="{{ shot.path | relative_url }}">
+        <figcaption>{{ caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+  <p class="gallery__hint">{{ shots.size }} image{% if shots.size != 1 %}s{% endif %} — scroll sideways, click to enlarge</p>
+</div>
+{% endif %}
