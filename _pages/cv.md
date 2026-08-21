@@ -125,8 +125,7 @@ sessions. My responsibilities included <u>evaluating examination papers</u> and
 problem sets against established rubrics, and providing consultation to students
 on coursework outside scheduled class hours.
 
-
- ## Certifications
+## Certifications
 
 * Datacamp Data Scientist Associate
 * Datacamp Data Analyst Associate
