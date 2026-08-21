@@ -305,7 +305,17 @@ html[data-mode="dark"] .pill--accent { color: #14161C; }
   color: var(--color-ink-soft);
   font-size: 0.96rem;
 }
-
+.teaser__list a.teaser__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.teaser__list a.teaser__link:hover {
+  opacity: 1;
+}
+.teaser__list a.teaser__link:hover .teaser__label {
+  color: var(--color-accent);
+}
 /* ===============================================================
    CV PAGE
    =============================================================== */

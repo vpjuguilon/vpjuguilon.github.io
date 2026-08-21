@@ -48,3 +48,19 @@ permalink: /
     </li>
   </ul>
 </section>
+
+{% if site.posts.size > 0 %}
+<section class="teaser">
+  <p class="eyebrow">Writing</p>
+  <ul class="teaser__list">
+    {% for post in site.posts limit:3 %}
+    <li>
+      <a class="teaser__link" href="{{ post.url | relative_url }}">
+        <span class="teaser__label">{{ post.title }}</span>
+        <span class="teaser__desc">{{ post.excerpt | strip_html | truncatewords: 28 }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

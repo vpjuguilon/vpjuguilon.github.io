@@ -1,5 +1,5 @@
 ---
-title: "PRISM: Recovering Gas Concentrations from Spectra with Partial Least Squares Regression"
+title: "PRISM: Partial Least Squares Regression and Interpretation of Spectral Measurements"
 date: 2026-08-21
 ---
 
@@ -7,7 +7,7 @@ This was a term project for Physics 215 (Computational Methods of Physics): pred
 concentrations directly from simulated absorption spectra using <u>partial least squares
 regression</u> (PLSR), rather than fitting individual absorption lines by hand. The motivating
 question was how far a linear latent-variable model can get on a spectral unmixing problem
-before line overlap and noise break it — tested across single-, double-, and triple-species
+before line overlap and noise break it, tested across single-, double-, and triple-species
 gas mixtures.
 
 ## Setup
