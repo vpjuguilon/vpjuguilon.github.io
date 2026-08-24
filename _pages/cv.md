@@ -56,7 +56,7 @@ optical spectroscopy</u> with <u>numerical modeling</u> to characterize emission
 mechanisms and their dependence on material composition and layer geometry.
 
 **Research Associate** · Tradewinds Technologies<br>
-*Part Time*<br>
+*Contract*<br>
 *February 2026 – Present*
 
 Contributed to a large-scale <u>scientometric</u> study on career outcomes following
@@ -68,7 +68,7 @@ engineering <u>data pipelines</u> against the OpenAlex API and in running the
 practices against the <u>NIST AI Risk Management Framework</u> and the <u>EU AI Act</u>.
 
 **Invention Harvester** · Schweiger and Partners<br>
-*Contract*<br>
+*Full Time*<br>
 *June 2026 – August 2026*
 
 I draft <u>patent applications</u> for filing in multiple jurisdictions (<u>Singapore</u>, <u>PCT</u>, and <u>EP</u>) under the supervision of a patent attorney. This
