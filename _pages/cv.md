@@ -58,8 +58,9 @@ mechanisms and their dependence on material composition and layer geometry.
 **Research Associate** · Tradewinds Technologies<br>
 *Part Time*<br>
 *February 2026 – Present*
-Contributing to a large-scale <u>scientometric</u> study on career outcomes following
-scientific retraction, built on a matched-control panel of over 34,000 authors
+
+Contributed to a large-scale <u>scientometric</u> study on career outcomes following
+scientific retraction, built on a matched-control panel of over 34,000 authors and 7M journal articles
 constructed from the <u>Retraction Watch</u> database and <u>OpenAlex</u>. I assisted in
 engineering <u>data pipelines</u> against the OpenAlex API and in running the
 <u>econometric analysis</u>, including <u>difference-in-differences</u> event studies,
