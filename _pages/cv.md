@@ -55,6 +55,17 @@ radiation in metallic thin-film structures. The work combines <u>ultrafast
 optical spectroscopy</u> with <u>numerical modeling</u> to characterize emission
 mechanisms and their dependence on material composition and layer geometry.
 
+**Research Associate** · Tradewinds Technologies<br>
+*Part Time*<br>
+*February 2026 – Present*
+Contributing to a large-scale <u>scientometric</u> study on career outcomes following
+scientific retraction, built on a matched-control panel of over 34,000 authors
+constructed from the <u>Retraction Watch</u> database and <u>OpenAlex</u>. I assisted in
+engineering <u>data pipelines</u> against the OpenAlex API and in running the
+<u>econometric analysis</u>, including <u>difference-in-differences</u> event studies,
+<u>two-way fixed effects</u>, and <u>Callaway–Sant'Anna</u> staggered-adoption estimators. I also contributing to a study on <u>AI ethics and governance</u>, assessing corporate AI
+practices against the <u>NIST AI Risk Management Framework</u> and the <u>EU AI Act</u>.
+
 **Invention Harvester** · Schweiger and Partners<br>
 *Contract*<br>
 *June 2026 – August 2026*
