@@ -3,8 +3,8 @@ layout: doc
 title: THz Waveform & Spectrum Analyzer
 description: Browser-based analysis tool for terahertz time-domain spectroscopy — TDS/FFT, emitter-saturation fitting, and frequency-domain convolution/deconvolution. Runs entirely client-side.
 permalink: /projects/thz-tds/
-live_url: https://REPLACE-WITH-VERCEL-URL
-source_url: https://github.com/REPLACE-OWNER/THz-TDS-Waveform-Analyzer
+live_url: https://thz-waveform-analyzer.vercel.app/
+source_url: https://github.com/vpjuguilon/THz-TDS-Waveform-Analyzer
 ---
 
 **NIP – THz Team** · time-domain · FFT · bandwidth · SNR
