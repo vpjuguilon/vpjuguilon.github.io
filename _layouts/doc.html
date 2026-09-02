@@ -1,0 +1,97 @@
+---
+layout: default
+---
+{% comment %}
+  Layout for long-form documentation / project pages.
+  Two-column grid: auto-generated sticky sidebar TOC + content.
+  The TOC and scroll-spy are built from the page's own <h2>/<h3> headings,
+  so there is nothing to maintain per page — add a heading, it appears in the nav.
+  Script is inlined here (same convention as the theme scripts in default.html).
+{% endcomment %}
+
+{% if page.live_url or page.source_url %}
+<p class="doc-links">
+  {% if page.live_url %}<a href="{{ page.live_url }}" target="_blank" rel="noopener">Live app ↗</a>{% endif %}
+  {% if page.source_url %}<a href="{{ page.source_url }}" target="_blank" rel="noopener">Source ↗</a>{% endif %}
+</p>
+{% endif %}
+
+<div class="doc">
+  <aside class="toc" aria-label="On this page">
+    <p class="toc-title">On this page</p>
+    <nav id="toc-nav"></nav>
+  </aside>
+
+  <article class="doc-content" id="doc-content">
+    {{ content }}
+  </article>
+</div>
+
+<script>
+(function () {
+  var content = document.getElementById('doc-content');
+  var nav = document.getElementById('toc-nav');
+  var aside = document.querySelector('.toc');
+  if (!content || !nav) return;
+
+  // Only Parts (h2) and Sections (h3) go in the sidebar; sub-subsections (h4) stay in the page.
+  var headings = content.querySelectorAll('h2, h3');
+  if (!headings.length) { if (aside) aside.style.display = 'none'; return; }
+
+  function slugify(s) {
+    return s.toLowerCase().trim()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+  }
+
+  var root = document.createElement('ul');
+  var currentSub = null;   // the <ul> nested under the most recent h2
+  var links = [];
+
+  headings.forEach(function (h) {
+    if (!h.id) h.id = slugify(h.textContent);   // kramdown adds ids; this is a fallback
+
+    var li = document.createElement('li');
+    li.className = (h.tagName === 'H2') ? 'toc-h2' : 'toc-h3';
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    a.dataset.target = h.id;
+    li.appendChild(a);
+    links.push(a);
+
+    if (h.tagName === 'H2') {
+      currentSub = document.createElement('ul');
+      currentSub.className = 'toc-sub';
+      li.appendChild(currentSub);
+      root.appendChild(li);
+    } else {
+      (currentSub || root).appendChild(li);
+    }
+  });
+  nav.appendChild(root);
+
+  // --- Scroll-spy: highlight the section currently near the top of the viewport ---
+  var byId = {};
+  links.forEach(function (a) { byId[a.dataset.target] = a; });
+  var activeId = null;
+
+  function setActive(id) {
+    if (activeId === id || !byId[id]) return;
+    if (activeId && byId[activeId]) byId[activeId].classList.remove('active');
+    activeId = id;
+    byId[id].classList.add('active');
+    // keep the active link visible inside a scrolling sidebar
+    byId[id].scrollIntoView({ block: 'nearest' });
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) setActive(e.target.id);
+    });
+  }, { rootMargin: '0px 0px -80% 0px', threshold: 0 });
+
+  headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>

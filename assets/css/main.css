@@ -432,3 +432,67 @@ main u {
   a { color: #000; text-decoration: none; }
   .cv-head__photo { width: 90px; height: 90px; }
 }
+
+/* ============================================================
+   Documentation layout (_layouts/doc.html)
+   Sticky sidebar TOC + content.
+   ============================================================ */
+.doc-links { display: flex; gap: 1.25rem; margin: 0 auto 1.5rem; max-width: var(--wrap); font-size: 0.9rem; }
+
+.doc {
+  --toc-width: 15rem;
+  --doc-scroll-offset: 1.5rem;      /* raise this if you ever add a fixed site header */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: var(--wrap);
+  margin-inline: auto;
+}
+@media (min-width: 60rem) {
+  .doc { grid-template-columns: var(--toc-width) minmax(0, 1fr); }
+  /* If content feels cramped, widen --wrap for this page or shrink --toc-width. */
+}
+
+/* --- Sidebar --- */
+.toc { font-size: 0.85rem; line-height: 1.4; }
+@media (min-width: 60rem) {
+  .toc {
+    position: sticky;
+    top: var(--doc-scroll-offset);
+    align-self: start;                                    /* required for sticky in a grid */
+    max-height: calc(100vh - 2 * var(--doc-scroll-offset));
+    overflow-y: auto;
+  }
+}
+@media (max-width: 59.99rem) {                            /* compact box on mobile */
+  .toc {
+    max-height: 45vh; overflow-y: auto;
+    border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+    border-radius: 8px; padding: 0.75rem 1rem;
+  }
+}
+.toc-title { font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
+  font-size: 0.7rem; opacity: 0.55; margin: 0 0 0.5rem; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc-sub { margin-left: 0.75rem; }
+.toc li { margin: 0.12rem 0; }
+.toc a {
+  display: block; text-decoration: none; color: inherit; opacity: 0.7;
+  padding: 0.1rem 0.5rem; border-left: 2px solid transparent; border-radius: 0 3px 3px 0;
+}
+.toc a:hover { opacity: 1; }
+.toc-h2 > a { font-weight: 600; opacity: 0.9; }
+.toc a.active {
+  opacity: 1; color: var(--accent-dark);
+  border-left-color: var(--accent-dark);
+  background: color-mix(in srgb, var(--accent-dark) 8%, transparent);
+}
+html[data-mode="dark"] .toc a.active {
+  color: var(--accent-light); border-left-color: var(--accent-light);
+  background: color-mix(in srgb, var(--accent-light) 12%, transparent);
+}
+
+/* --- Content: stop wide tables/code from blowing out the column --- */
+.doc-content :is(h2, h3, h4) { scroll-margin-top: var(--doc-scroll-offset); }
+.doc-content pre { overflow-x: auto; }
+.doc-content table { display: block; overflow-x: auto; max-width: 100%; }
