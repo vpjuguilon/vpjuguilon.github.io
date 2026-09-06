@@ -41,7 +41,7 @@
   --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
-  --wrap: 54rem;
+  --wrap: 80rem;
   --gutter: 1.5rem;
 }
 
@@ -495,4 +495,60 @@ html[data-mode="dark"] .toc a.active {
 /* --- Content: stop wide tables/code from blowing out the column --- */
 .doc-content :is(h2, h3, h4) { scroll-margin-top: var(--doc-scroll-offset); }
 .doc-content pre { overflow-x: auto; }
-.doc-content table { display: block; overflow-x: auto; max-width: 100%; }
+.doc-content table {
+  display: block;            /* enables horizontal scroll on narrow screens */
+  overflow-x: auto;
+  max-width: 100%;
+  width: fit-content;        /* shrink to content so it can be centered */
+  margin-inline: auto;       /* center the table in the column */
+  border-collapse: collapse; /* single clean borders, not doubled */
+}
+.doc-content th,
+.doc-content td {
+  border: 1px solid var(--color-ink);  /* near-black on light bg, near-white on dark bg */
+  text-align: center;
+  padding: 0.65rem 1rem;
+}
+.doc-content tbody th {
+  text-align: left;          /* keep gas-name row labels left-aligned; delete for full-center */
+}
+/* ===============================================================
+   MULTI-PANEL FIGURES (subfigures a/b/c) — project pages
+   =============================================================== */
+
+.subfigs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.subfigs .subfig {
+  flex: 1 1 0;
+  min-width: 200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;   /* lets images + captions bottom-align across unequal heights */
+}
+
+.subfigs .subfig img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;         /* pushes a short image down so it sits by its caption */
+}
+
+.subfigs .subfig figcaption {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+  margin-top: 0;
+}
+
+/* Side-by-side FULL figures (Figs 1 & 2): match normal figure captions, not a/b/c subcaptions */
+.subfigs--figs .subfig figcaption {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--color-ink);
+}
