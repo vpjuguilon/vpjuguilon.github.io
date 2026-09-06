@@ -327,16 +327,20 @@ html[data-mode="dark"] .pill--accent { color: #14161C; }
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   margin: 0;
 }
-
 .cv-head {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1.5rem;
   max-width: var(--wrap);
   margin: 0 auto 0.5rem;
   padding-inline: var(--gutter);
 }
-
+.cv-head .page-header {
+  flex: 0 1 auto;
+  margin: 0;
+  text-align: left;
+}
 .cv-head__photo {
   width: 120px;
   height: 120px;
@@ -346,7 +350,6 @@ html[data-mode="dark"] .pill--accent { color: #14161C; }
   object-position: center 20%;
   border: 1px solid var(--color-rule);
 }
-
 .cv-actions {
   display: flex;
   flex-wrap: wrap;
