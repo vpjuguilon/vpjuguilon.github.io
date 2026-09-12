@@ -82,8 +82,12 @@ layout: default
     if (activeId && byId[activeId]) byId[activeId].classList.remove('active');
     activeId = id;
     byId[id].classList.add('active');
-    // keep the active link visible inside a scrolling sidebar
-    byId[id].scrollIntoView({ block: 'nearest' });
+    // keep the active link visible inside the sidebar — desktop only.
+    // On mobile the TOC is a top-of-page box, so scrolling a link into view
+    // would drag the whole page (loops back to top), so skip it there.
+    if (window.matchMedia('(min-width: 60rem)').matches) {
+      byId[id].scrollIntoView({ block: 'nearest' });
+    }
   }
 
   var observer = new IntersectionObserver(function (entries) {
